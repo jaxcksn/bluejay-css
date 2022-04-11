@@ -1,0 +1,11 @@
+{
+  "name": "bluejay-css",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/jaxcksn/bluejay-css.git",
+  "author": "Jackson Casey <65034067+jaxcksn@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.50.0"
+  }
+}

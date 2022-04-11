@@ -1,0 +1,54 @@
+$one: 8.33%;
+$two: 16.667%;
+$three: 25%;
+$four: 33.333%;
+$five: 41.667%;
+$six: 50%;
+$seven: 58.333%;
+$eight: 66.667%;
+$nine: 75%;
+$ten: 83.333%;
+$eleven: 91.667%;
+$twelve: 100%;
+
+
+
+body {
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container {
+    display: flex;
+    width: 100%;
+}
+
+div.row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-grn {
+    background-color: green;
+}
+
+.bg-ylw {
+    background-color: yellow;
+}
+
+.col {
+    flex: 1,
+}
+
+$grid__cols: 12;
+@for $i from 1 through $grid__cols {
+  .col-#{$i} {
+    flex-basis: calc(100 / ($grid__cols / $i) ) * 1%;
+  }
+}
